@@ -9,6 +9,7 @@ class bank
     string name;
     string type;
     int account;
+    int withdrawamount;
     float balance;
 
     void givevalue()
@@ -26,6 +27,7 @@ class bank
     cout << "Enter balance amount: ";
     cin >> balance;
 
+
         name = name;
         type = type;
         account = account;
@@ -38,15 +40,17 @@ class bank
     cin >> balance;
         balance += balance;
 
+
     }
 
     void withdraw()
     {
          cout << "Enter amount to withdraw: ";
-    cin >> balance;
-        if (balance >= balance) 
+    cin >> withdrawamount;
+
+        if (balance >= withdrawamount) 
     {
-        balance -= balance;
+        balance -= withdrawamount;
         cout << "Amount withdrawn successfully.\n";
     } else 
     {
